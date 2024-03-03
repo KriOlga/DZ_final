@@ -1,11 +1,7 @@
 ﻿
 Console.WriteLine("Введите элементы массива через пробел:");
-#pragma warning disable CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
 string input = Console.ReadLine();
-#pragma warning restore CS8600 // Преобразование литерала, допускающего значение NULL или возможного значения NULL в тип, не допускающий значение NULL.
-#pragma warning disable CS8602 // Разыменование вероятной пустой ссылки.
 string[] inputArray = input.Split(' ',StringSplitOptions.RemoveEmptyEntries);
-#pragma warning restore CS8602 // Разыменование вероятной пустой ссылки.
 
 string[] resultArray = GetNewArray(inputArray);
 
